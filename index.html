@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- نوع المستند HTML -->
+<html lang="en">
+  <!-- لغة الصفحة إنكليزية -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- الترميز لدعم جميع اللغات -->
+    <title>Fahd Links</title>
+    <!-- عنوان الصفحة في المتصفح -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- لجعل الموقع متجاوب مع جميع الأجهزة -->
+    <meta
+      name="description"
+      content="All Fahd's social links in one place. Connect with me on Instagram, TikTok, YouTube, WhatsApp, and Telegram."
+    />
+    <meta property="og:title" content="Fahd Links" />
+    <meta
+      property="og:description"
+      content="All Fahd's social links in one place. Connect with me on Instagram, TikTok, YouTube, WhatsApp, and Telegram."
+    />
+    <meta
+      property="og:image"
+      content="WhatsApp Image 2025-07-12 at 03.51.11_af4f5700.jpg"
+    />
+    <!-- أيقونة الموقع في التبويب -->
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/747/747376.png"
+      type="image/png"
+    />
+    <!-- استيراد أيقونات Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- ربط ملف التنسيقات الرئيسي -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- شريط الإشعارات -->
+    <div class="notification-bar" id="notification-bar">
+      <span>Welcome! Check out all my social links below 👇</span>
+      <button onclick="closeNotification()" aria-label="Close notification">
+        &times;
+      </button>
+    </div>
+
+    <!-- الحاوية الرئيسية للمحتوى -->
+    <div class="container" role="main">
+      <!-- صورة الملف الشخصي -->
+      <img
+        src="WhatsApp Image 2025-07-12 at 03.51.11_af4f5700.jpg"
+        alt="Profile"
+        class="profile-img"
+        id="profile-img"
+      />
+
+      <!-- اسم المستخدم -->
+      <div class="header-row">
+        <h1 id="name" tabindex="0" aria-live="polite">
+          Fahd’s Official Socials
+        </h1>
+      </div>
+
+      <!-- قسم عن المستخدم -->
+      <section class="about-section">
+        <p>
+          Hi, I'm Fahd! Here you can find all my official social media accounts
+          and ways to contact me. Let's connect!
+        </p>
+      </section>
+
+      <!-- روابط التواصل الاجتماعي -->
+      <nav aria-label="Social Links">
+        <a
+          class="btn"
+          href="https://www.instagram.com/4fa._d/profilecard/?igsh=a2F6dnRldnEzOGNo"
+          target="_blank"
+          id="insta1"
+        >
+          <i class="fab fa-instagram"></i> Instagram
+          <span class="visit-count" id="count-insta1">0</span>
+        </a>
+        <!--<a
+          class="btn"
+          href="https://www.instagram.com/pro.fhd/profilecard/?igsh=cjJsaWwyMzVjbjUw"
+          target="_blank"
+          id="insta2"
+        >
+          <i class="fab fa-instagram"></i> Instagram 2
+          <span class="visit-count" id="count-insta2">0</span>
+        </a>-->
+        <a
+          class="btn"
+          href="https://www.tiktok.com/@4fa._d?_t=ZS-8xx6sMsUwWz&_r=1"
+          target="_blank"
+          id="tiktok1"
+        >
+          <i class="fab fa-tiktok"></i> TikTok
+          <span class="visit-count" id="count-tiktok1">0</span>
+        </a>
+        <!--<a
+          class="btn"
+          href="https://www.tiktok.com/@5fa._d?_t=ZS-8xx6xvlwiRR&_r=1"
+          target="_blank"
+          id="tiktok2"
+        >
+          <i class="fab fa-tiktok"></i> TikTok 2
+          <span class="visit-count" id="count-tiktok2">0</span>
+        </a>-->
+        <a
+          class="btn"
+          href="https://youtube.com/@5fa._d?si=pLbF-Md6taJsLLrp"
+          target="_blank"
+          id="youtube"
+        >
+          <i class="fab fa-youtube"></i> YouTube
+          <span class="visit-count" id="count-youtube">0</span>
+        </a>
+        <a
+          class="btn"
+          href="https://wa.me/9647726028440"
+          target="_blank"
+          id="whatsapp"
+        >
+          <i class="fab fa-whatsapp"></i> WhatsApp
+          <span class="visit-count" id="count-whatsapp">0</span>
+        </a>
+        <a
+          class="btn"
+          href="https://t.me/Fahd_40"
+          target="_blank"
+          id="telegram"
+        >
+          <i class="fab fa-telegram"></i> Telegram
+          <span class="visit-count" id="count-telegram">0</span>
+        </a>
+        <a
+          class="btn"
+          href="mailto:fahd.info2@gmail.com"
+          target="_blank"
+          id="email"
+        >
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <!-- <a class="btn" href="fahd.vcf" download id="vcard">
+          <i class="fas fa-address-card"></i> Download vCard
+        </a>-->
+      </nav>
+
+      <!-- زر نسخ رابط الصفحة -->
+      <button class="btn copy-btn" onclick="copyLink()" aria-label="Copy link">
+        <i class="fas fa-copy"></i> Copy Link
+      </button>
+
+      <!-- رسالة ترحيبية تظهر عند الحاجة -->
+      <div
+        class="welcome-message"
+        role="alert"
+        id="welcome-msg"
+        style="display: none"
+      >
+        Welcome to Fahd Links! ✨
+      </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+      <div>&copy; <span id="year"></span> Fahd. All rights reserved.</div>
+      <div>
+        <a href="#top" class="footer-link">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Google Analytics (مثال) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+
+    <!-- ربط ملف الجافاسكريبت للوظائف -->
+    <script src="script.js"></script>
+    <script>
+      // تحديث سنة الفوتر تلقائياً
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // إغلاق شريط الإشعارات
+      function closeNotification() {
+        document.getElementById("notification-bar").style.display = "none";
+      }
+
+      // الوضع الليلي/النهاري تلقائي حسب النظام
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.body.classList.add("dark-mode");
+      }
+
+      // عداد زوار بسيط (محلي)
+      if (localStorage) {
+        let visits = Number(localStorage.getItem("site-visits") || 0) + 1;
+        localStorage.setItem("site-visits", visits);
+        // يمكنك عرض العدد في الفوتر أو مكان آخر إذا رغبت
+      }
+    </script>
+  </body>
+</html>
